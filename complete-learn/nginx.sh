@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo apt update -y && sudo apt upgrade -y
+
+sudo apt install nginx -y
+
+wait 15
+
+sudo systemctl enable nginx
+
+sudo systemctl restart nginx
